@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import { RiTwitterXFill } from "react-icons/ri"; // Add this import
 import { Play, Maximize2, Video, Grid, Menu, Activity, Droplet } from "lucide-react"
 
 export default function Dashboard() {
@@ -44,12 +45,12 @@ export default function Dashboard() {
             <h1 className="text-xl font-bold">Trenches Frog Science</h1>
           </div>
           <div className="flex space-x-2">
-            <a
-              href="#"
-              className="border border-white rounded px-4 py-1 hover:bg-white hover:text-[#5D4B8C] transition-colors"
-            >
-              <img src="/icons8-x-50.png" alt="" />
-            </a>
+          <a
+  href="#"
+  className="border border-white rounded px-4 py-1 hover:bg-white hover:text-[#5D4B8C] transition-colors flex items-center justify-center"
+>
+  <RiTwitterXFill className="w-5 h-5" />
+</a>
             <a
               href="#"
               className="border border-white rounded px-4 py-1 flex items-center hover:bg-white hover:text-[#5D4B8C] transition-colors"
