@@ -45,12 +45,12 @@ export default function Dashboard() {
             <h1 className="text-xl font-bold">Trenches Frog Science</h1>
           </div>
           <div className="flex space-x-2">
-          <a
-  href="#"
-  className="border border-white rounded px-4 py-1 hover:bg-white hover:text-[#5D4B8C] transition-colors flex items-center justify-center"
->
-  <RiTwitterXFill className="w-5 h-5" />
-</a>
+            <a
+              href="https://x.com/trenches_frogs"
+              className="border border-white rounded px-4 py-1 hover:bg-white hover:text-[#5D4B8C] transition-colors flex items-center justify-center"
+            >
+              <RiTwitterXFill className="w-5 h-5" />
+            </a>
             <a
               href="#"
               className="border border-white rounded px-4 py-1 flex items-center hover:bg-white hover:text-[#5D4B8C] transition-colors"
@@ -86,15 +86,15 @@ export default function Dashboard() {
 
               <div className="relative bg-[#3A3A4D] rounded-lg overflow-hidden">
                 <div className="aspect-video flex items-center justify-center">
-                <video
-  src={videoSource}
-  autoPlay
-  muted
-  loop
-  playsInline
-  controls={false}
-  className="w-full h-full object-cover [filter:invert(15%)_sepia(28%)_saturate(6%)_hue-rotate(339deg)_brightness(91%)_contrast(86%)]"
-/>
+                  <video
+                    src={videoSource}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    controls={false}
+                    className="w-full h-full object-cover [filter:invert(15%)_sepia(28%)_saturate(6%)_hue-rotate(339deg)_brightness(91%)_contrast(86%)]"
+                  />
                 </div>
                 <div className="absolute bottom-2 left-2 text-white text-sm">R-240</div>
                 <div className="absolute bottom-2 right-2 flex space-x-2">
@@ -257,9 +257,8 @@ export default function Dashboard() {
               {/* Subject List */}
               <div className="space-y-3">
                 <div
-                  className={`${
-                    selectedSubject === "FR-357" ? "bg-[#E8E4F3] border-[#5D4B8C]" : "bg-white border-gray-200"
-                  } rounded-lg p-3 border-2 cursor-pointer transition-colors`}
+                  className={`${selectedSubject === "FR-357" ? "bg-[#E8E4F3] border-[#5D4B8C]" : "bg-white border-gray-200"
+                    } rounded-lg p-3 border-2 cursor-pointer transition-colors`}
                   onClick={() => handleSubjectClick("FR-357")}
                 >
                   <div className="flex items-center">
@@ -279,9 +278,8 @@ export default function Dashboard() {
                 </div>
 
                 <div
-                  className={`${
-                    selectedSubject === "FR-358" ? "bg-[#E8E4F3] border-[#5D4B8C]" : "bg-white border-gray-200"
-                  } rounded-lg p-3 border-2 cursor-pointer transition-colors`}
+                  className={`${selectedSubject === "FR-358" ? "bg-[#E8E4F3] border-[#5D4B8C]" : "bg-white border-gray-200"
+                    } rounded-lg p-3 border-2 cursor-pointer transition-colors`}
                   onClick={() => handleSubjectClick("FR-358")}
                 >
                   <div className="flex items-center">
