@@ -37,7 +37,11 @@ export const App = () => {
           <span className="logo-icon">🧪</span> Trenches Frog Science
         </h1>
         <div className="df aic header-buttons">
-          <button className="df aic gap-10">
+          <button className="df aic gap-10"
+            onClick={() => {
+              window.open("https://x.com/trenches_frogs", "_blank");
+            }}
+          >
             <RiTwitterXFill style={{ transform: "scale(1.4)" }} />
           </button>
           <button className="df aic gap-10">
